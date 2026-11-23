@@ -353,23 +353,23 @@ The calls to action link to `#projects` and `#contact`. Actual target scrolling 
 
 ## 5.1 About Section
 
-- [ ] Create About section.
-- [ ] Add professional biography.
-- [ ] Add background and experience summary.
-- [ ] Add relevant personal information.
-- [ ] Add optional achievements.
-- [ ] Add download-resume action if a resume is available.
+- [x] Create About section.
+- [x] Add professional biography.
+- [x] Add background and experience summary.
+- [x] Add relevant personal information.
+- [x] Add optional achievements.
+- [x] Add download-resume action if a resume is available.
 
 ## 5.2 Skills Section
 
-- [ ] Create technical skills layout.
-- [ ] Group programming languages.
-- [ ] Group frameworks.
-- [ ] Group databases.
-- [ ] Group development tools.
-- [ ] Use consistent badges or skill cards.
-- [ ] Avoid exaggerated skill ratings.
-- [ ] Keep the presentation readable.
+- [x] Create technical skills layout.
+- [x] Group programming languages.
+- [x] Group frameworks.
+- [x] Group databases.
+- [x] Group development tools.
+- [x] Use consistent badges or skill cards.
+- [x] Avoid exaggerated skill ratings.
+- [x] Keep the presentation readable.
 
 ## Components
 
@@ -385,11 +385,13 @@ components/
 
 ## Acceptance Criteria
 
-- [ ] Content is modular.
-- [ ] Skills are organized logically.
-- [ ] No inconsistent icon styles.
-- [ ] Responsive grid.
-- [ ] Theme consistency maintained.
+- [x] Content is modular.
+- [x] Skills are organized logically.
+- [x] No inconsistent icon styles.
+- [x] Responsive grid.
+- [x] Theme consistency maintained.
+
+The About section uses the supplied background and bio. No specific employment history or achievements were provided, so none were invented. The supplied resume is available from the About section with explicit approval. Node.js is grouped under “Frameworks & Runtime.”
 
 ---
 
@@ -680,7 +682,7 @@ Update this section after every completed phase.
 | 2     | Design System and shadcn/ui        | [x]    |
 | 3     | Global Layout                      | [x]    |
 | 4     | Hero Section                       | [x]    |
-| 5     | About and Skills                   | [ ]    |
+| 5     | About and Skills                   | [x]    |
 | 6     | Projects Portfolio                 | [ ]    |
 | 7     | Experience and Education           | [ ]    |
 | 8     | Contact Section                    | [ ]    |
@@ -690,15 +692,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 4 — Hero Section — Completed
+**Current Phase:** Phase 5 — About and Skills — Completed
 
-**Current Task:** Phase 4 verified; CTA target scrolling will be validated when the Projects and Contact sections are implemented in Phases 6 and 8.
+**Current Task:** Phase 5 verified; About and Skills sections use the supplied profile information and skill list.
 
-**Last Completed Phase:** Phase 4 — Hero Section
+**Last Completed Phase:** Phase 5 — About and Skills
 
 **Blocked Tasks:** None
 
-**Next Action:** Wait for Phase 4 to be merged and for user approval before starting Phase 5 — About and Skills.
+**Next Action:** Wait for Phase 5 to be merged and for user approval before starting Phase 6 — Projects Portfolio.
 
 ---
 
