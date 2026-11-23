@@ -3,6 +3,7 @@ export const navigationLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
 ] as const;
 
 export const contactLink = { label: "Contact", href: "#contact" } as const;
