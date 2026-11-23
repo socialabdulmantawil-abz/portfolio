@@ -34,6 +34,10 @@ Before starting any phase:
 9. Do not skip phases without explicit approval.
 10. Do not regenerate previously completed work unnecessarily.
 11. Update this tracking file after completing each phase.
+12. Commit the verified phase changes on that phase's branch and push the branch to GitHub.
+13. After the push succeeds, immediately return to `main` and fast-forward it from `origin/main`.
+14. Wait for user approval before beginning another phase.
+15. Create the next phase branch only after the previous phase has been merged into an up-to-date `main`.
 
 ## Progress Status
 
@@ -55,18 +59,18 @@ A phase can only be marked completed after its acceptance criteria have been ver
 
 ## Tasks
 
-- [ ] Inspect the existing project.
-- [ ] Verify Node.js and npm versions.
-- [ ] Verify the Next.js version.
-- [ ] Verify the React version.
-- [ ] Verify the TypeScript configuration.
-- [ ] Verify the Tailwind CSS version.
-- [ ] Initialize or repair the Next.js App Router setup if necessary.
-- [ ] Confirm the project uses TypeScript.
-- [ ] Configure path aliases.
-- [ ] Install required foundational dependencies.
-- [ ] Establish the initial modular folder structure.
-- [ ] Confirm the development server works.
+- [x] Inspect the existing project.
+- [x] Verify Node.js and npm versions.
+- [x] Verify the Next.js version.
+- [x] Verify the React version.
+- [x] Verify the TypeScript configuration.
+- [x] Verify the Tailwind CSS version.
+- [x] Initialize or repair the Next.js App Router setup if necessary.
+- [x] Confirm the project uses TypeScript.
+- [x] Configure path aliases.
+- [x] Install required foundational dependencies.
+- [x] Establish the initial modular folder structure.
+- [x] Confirm the development server works.
 
 ## Required Structure
 
@@ -92,13 +96,13 @@ public/
 
 ## Acceptance Criteria
 
-- [ ] Next.js starts successfully.
-- [ ] TypeScript works.
-- [ ] Tailwind CSS works.
-- [ ] npm scripts work.
-- [ ] App Router works.
-- [ ] Project folders are organized.
-- [ ] No unnecessary dependencies are installed.
+- [x] Next.js starts successfully.
+- [x] TypeScript works.
+- [x] Tailwind CSS works.
+- [x] npm scripts work.
+- [x] App Router works.
+- [x] Project folders are organized.
+- [x] No unnecessary dependencies are installed.
 
 **Do not proceed until Phase 1 is verified.**
 
@@ -663,7 +667,7 @@ Update this section after every completed phase.
 
 | Phase | Description                        | Status |
 | ----- | ---------------------------------- | ------ |
-| 1     | Project Foundation                 | [ ]    |
+| 1     | Project Foundation                 | [x]    |
 | 2     | Design System and shadcn/ui        | [ ]    |
 | 3     | Global Layout                      | [ ]    |
 | 4     | Hero Section                       | [ ]    |
@@ -677,15 +681,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 1 — Project Foundation
+**Current Phase:** Phase 1 — Project Foundation — Completed
 
-**Current Task:** Inspect existing project and verify the development environment.
+**Current Task:** Phase 1 verified; awaiting approval before Phase 2.
 
-**Last Completed Phase:** None
+**Last Completed Phase:** Phase 1 — Project Foundation
 
 **Blocked Tasks:** None
 
-**Next Action:** Inspect the existing project before making any changes.
+**Next Action:** Wait for approval before starting Phase 2 — Design System and shadcn/ui.
 
 ---
 
@@ -701,5 +705,7 @@ Update this section after every completed phase.
 8. Do not generate the entire application in one response.
 9. Do not introduce a new design system.
 10. Follow `AGENT.md` and `DEVELOPMENT_RULES.md` at all times.
+11. After each phase, push its branch and return to `main`; do not merge automatically.
+12. Base a new phase branch on `main` only after the previous phase has been merged.
 
 **The objective is to build a complete portfolio through controlled, verified, incremental development.**

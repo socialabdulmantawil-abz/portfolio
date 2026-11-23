@@ -711,7 +711,11 @@ Before finishing a task:
 5. Implement only the current phase and dependencies required by that phase.
 6. Verify every acceptance criterion for the current phase.
 7. Update the phase status and current development state in `DEVELOPMENT_TASKS.md`.
-8. Report completion and wait for approval before starting the next phase.
+8. Commit the verified phase changes on the phase branch and push that branch to `origin`.
+9. After confirming the push succeeded, immediately switch to `main` and fast-forward from `origin/main`.
+10. Report completion and wait for approval before starting the next phase.
+
+Do not merge a phase branch automatically. Start a subsequent phase branch only after the preceding phase has been merged into `main`; create it from an up-to-date `main` so it includes the accepted work. If pushing or updating `main` fails, report the failure and do not claim the handoff is complete.
 
 ### Status Tracking
 
