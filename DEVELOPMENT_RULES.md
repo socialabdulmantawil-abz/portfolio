@@ -703,20 +703,34 @@ Before finishing a task:
 
 `DEVELOPMENT_TASKS.md` is the implementation roadmap and progress authority for the project.
 
+### Branch Creation and Main Sync
+
+Before creating a phase branch:
+
+1. Check the working tree and preserve all user changes; do not discard, reset, or stash them without approval.
+2. Confirm that the previous phase has been merged into `main`.
+3. Run `git fetch origin`.
+4. Switch to `main`, then run `git pull --ff-only origin main`.
+5. Verify local `main` matches `origin/main` and has no unexpected local commits.
+6. Create the new phase branch from the updated `main`.
+
+If fetching or fast-forwarding fails or history has diverged, stop and report the issue. Never create a phase branch from stale code or force-reset `main`.
+
 ### Phase Workflow
 
 1. Read `AGENT.md`, `DEVELOPMENT_RULES.md`, and `DEVELOPMENT_TASKS.md`.
 2. Inspect the current project and review completed work.
 3. Identify the current phase, current task, and acceptance criteria.
-4. Present the implementation plan before significant changes.
-5. Implement only the current phase and dependencies required by that phase.
-6. Verify every acceptance criterion for the current phase.
-7. Update the phase status and current development state in `DEVELOPMENT_TASKS.md`.
-8. Commit the verified phase changes on the phase branch and push that branch to `origin`.
-9. After confirming the push succeeded, immediately switch to `main` and fast-forward from `origin/main`.
-10. Report completion and wait for approval before starting the next phase.
+4. Before creating its branch, follow the branch creation and main sync procedure above.
+5. Present the implementation plan before significant changes.
+6. Implement only the current phase and dependencies required by that phase.
+7. Verify every acceptance criterion for the current phase.
+8. Update the phase status and current development state in `DEVELOPMENT_TASKS.md`.
+9. Commit the verified phase changes on the phase branch and push that branch to `origin`.
+10. After confirming the push succeeded, immediately switch to `main` and fast-forward from `origin/main`.
+11. Report completion and wait for approval before starting the next phase.
 
-Do not merge a phase branch automatically. Start a subsequent phase branch only after the preceding phase has been merged into `main`; create it from an up-to-date `main` so it includes the accepted work. If pushing or updating `main` fails, report the failure and do not claim the handoff is complete.
+Do not merge a phase branch automatically. Start a subsequent phase branch only after the preceding phase has been merged into `main`, and fetch/pull the latest `origin/main` before creating it. If pushing or updating `main` fails, report the failure and do not claim the handoff is complete.
 
 ### Status Tracking
 
