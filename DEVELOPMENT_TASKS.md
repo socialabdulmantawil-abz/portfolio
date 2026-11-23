@@ -29,15 +29,17 @@ Before starting any phase:
 4. Inspect the current project structure.
 5. Review completed phases.
 6. Identify the current phase and its acceptance criteria.
-7. Explain the implementation plan before significant changes.
-8. Work only on the requested phase and its necessary dependencies.
-9. Do not skip phases without explicit approval.
-10. Do not regenerate previously completed work unnecessarily.
-11. Update this tracking file after completing each phase.
-12. Commit the verified phase changes on that phase's branch and push the branch to GitHub.
-13. After the push succeeds, immediately return to `main` and fast-forward it from `origin/main`.
-14. Wait for user approval before beginning another phase.
-15. Create the next phase branch only after the previous phase has been merged into an up-to-date `main`.
+7. Before creating the phase branch, confirm the prior phase is merged, run `git fetch origin`, switch to `main`, and run `git pull --ff-only origin main`.
+8. Verify local `main` matches `origin/main` before creating the phase branch from it.
+9. Preserve uncommitted user changes; do not discard, reset, or stash them without approval.
+10. Explain the implementation plan before significant changes.
+11. Work only on the requested phase and its necessary dependencies.
+12. Do not skip phases without explicit approval.
+13. Do not regenerate previously completed work unnecessarily.
+14. Update this tracking file after completing each phase.
+15. Commit the verified phase changes on that phase's branch and push the branch to GitHub.
+16. After the push succeeds, immediately return to `main` and fast-forward it from `origin/main`.
+17. Wait for user approval before beginning another phase.
 
 ## Progress Status
 
@@ -259,18 +261,18 @@ Verify all components in dark and light themes.
 
 ## Tasks
 
-- [ ] Create the main navigation.
-- [ ] Create the portfolio logo or wordmark.
-- [ ] Create desktop navigation links.
-- [ ] Create functional mobile navigation.
-- [ ] Add the theme toggle.
-- [ ] Add the primary contact button.
-- [ ] Create the footer.
-- [ ] Create reusable page containers.
-- [ ] Create reusable section wrappers.
-- [ ] Create a consistent spacing system.
-- [ ] Implement responsive layout behavior.
-- [ ] Add active navigation states where appropriate.
+- [x] Create the main navigation.
+- [x] Create the portfolio logo or wordmark.
+- [x] Create desktop navigation links.
+- [x] Create functional mobile navigation.
+- [x] Add the theme toggle.
+- [x] Add the primary contact button.
+- [x] Create the footer.
+- [x] Create reusable page containers.
+- [x] Create reusable section wrappers.
+- [x] Create a consistent spacing system.
+- [x] Implement responsive layout behavior.
+- [x] Add active navigation states where appropriate.
 
 ## Components
 
@@ -280,23 +282,28 @@ components/
     navbar.tsx
     mobile-nav.tsx
     footer.tsx
-    theme-toggle.tsx
-    theme-provider.tsx
+    navigation.ts
 
   shared/
     container.tsx
+    section.tsx
     section-heading.tsx
+
+  theme-provider.tsx
+  theme-toggle.tsx
 ```
 
 ## Acceptance Criteria
 
-- [ ] Desktop navigation works.
-- [ ] Mobile navigation works.
-- [ ] Theme toggle works.
-- [ ] Navigation links reach the correct sections.
-- [ ] Footer is responsive.
-- [ ] Layout follows the official theme.
-- [ ] No horizontal overflow.
+- [x] Desktop navigation works.
+- [x] Mobile navigation works.
+- [x] Theme toggle works.
+- [x] Navigation anchors match the planned section IDs.
+- [x] Footer is responsive.
+- [x] Layout follows the official theme.
+- [x] No horizontal overflow.
+
+The navigation is wired to `#home`, `#about`, `#skills`, `#projects`, `#experience`, and `#contact`. Actual target scrolling validation is deferred until the corresponding sections are implemented in Phases 5–8, as approved, to preserve the planned phase boundaries.
 
 ---
 
@@ -669,7 +676,7 @@ Update this section after every completed phase.
 | ----- | ---------------------------------- | ------ |
 | 1     | Project Foundation                 | [x]    |
 | 2     | Design System and shadcn/ui        | [x]    |
-| 3     | Global Layout                      | [ ]    |
+| 3     | Global Layout                      | [x]    |
 | 4     | Hero Section                       | [ ]    |
 | 5     | About and Skills                   | [ ]    |
 | 6     | Projects Portfolio                 | [ ]    |
@@ -681,15 +688,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 2 — Design System and shadcn/ui — Completed
+**Current Phase:** Phase 3 — Global Layout — Completed
 
-**Current Task:** Phase 2 verified; awaiting design-system approval before Phase 3.
+**Current Task:** Phase 3 verified; actual navigation target scrolling will be validated as section content is added in Phases 5–8.
 
-**Last Completed Phase:** Phase 2 — Design System and shadcn/ui
+**Last Completed Phase:** Phase 3 — Global Layout
 
 **Blocked Tasks:** None
 
-**Next Action:** Wait for design-system approval before starting Phase 3 — Global Layout.
+**Next Action:** Wait for Phase 3 to be merged and for user approval before starting Phase 4 — Hero Section.
 
 ---
 

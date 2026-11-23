@@ -139,6 +139,20 @@ After completing the task, explain:
 
 Do not mark the phase complete or begin the next phase without verified acceptance criteria and the required approval.
 
+## Before Creating a Phase Branch
+
+Before creating any phase branch:
+
+1. Check the working tree and preserve all user changes. Do not discard, reset, or stash changes without approval.
+2. Confirm that the previous phase has been merged into `main`.
+3. Run `git fetch origin`.
+4. Switch to `main`.
+5. Run `git pull --ff-only origin main`.
+6. Verify that local `main` matches `origin/main` and that no unexpected local commits are present.
+7. Create the new phase branch from this updated `main`.
+
+If fetching or fast-forwarding fails, or the branch history has diverged, stop and report the issue. Do not create the phase branch from stale code or force-reset `main`.
+
 ## Phase Git Handoff
 
 After a phase passes verification:
@@ -150,7 +164,7 @@ After a phase passes verification:
 5. Leave the phase branch available for review or merging; do not merge it automatically.
 6. Wait for user approval before beginning another phase.
 
-Create a branch for the next phase only after the previous phase has been merged into `main`. Start that branch from an up-to-date `main` so it includes all accepted prior-phase work. If the push or main update fails, report the failure and do not claim the handoff is complete.
+Create a branch for the next phase only after the previous phase has been merged into `main` and the main-branch sync procedure above has completed. Start that branch from the updated `main` so it includes all accepted prior-phase work. If the push or main update fails, report the failure and do not claim the handoff is complete.
 
 ---
 
