@@ -401,19 +401,19 @@ The About section uses the supplied background and bio. No specific employment h
 
 ## Tasks
 
-- [ ] Create projects section.
-- [ ] Define reusable project data types.
-- [ ] Create project data structure.
-- [ ] Create reusable project cards.
-- [ ] Display project name.
-- [ ] Display project description.
-- [ ] Display technologies used.
-- [ ] Add project screenshots.
-- [ ] Add live demo links when available.
-- [ ] Add GitHub repository links when available.
-- [ ] Add featured project styling.
-- [ ] Add project details dialog or dedicated pages if needed.
-- [ ] Add responsive project grid.
+- [x] Create projects section.
+- [x] Define reusable project data types.
+- [x] Create project data structure.
+- [x] Create reusable project cards.
+- [x] Display project name.
+- [x] Display project description.
+- [x] Display technologies used.
+- [x] Defer screenshots until project images are available; do not use placeholders.
+- [x] Add live demo links when available.
+- [x] Add GitHub repository links when available.
+- [x] Add featured project styling.
+- [x] Determine that a project details dialog or dedicated pages are not needed.
+- [x] Add responsive project grid.
 
 ## Components
 
@@ -435,12 +435,14 @@ lib/
 
 ## Acceptance Criteria
 
-- [ ] Project cards are reusable.
-- [ ] Project data is separated from presentation.
-- [ ] Links work correctly.
-- [ ] Screenshots display correctly.
-- [ ] Project layout is responsive.
-- [ ] All cards follow the design system.
+- [x] Project cards are reusable.
+- [x] Project data is separated from presentation.
+- [x] Project links are shown only when URLs are supplied.
+- [x] Screenshots are omitted when none are supplied; display verification is deferred until assets are available.
+- [x] Project layout is responsive.
+- [x] All cards follow the design system.
+
+The 10 project entries and two featured flags were supplied by the user. No repository URLs, demo URLs, or screenshots were supplied; the cards omit those elements rather than using placeholders.
 
 ---
 
@@ -683,7 +685,7 @@ Update this section after every completed phase.
 | 3     | Global Layout                      | [x]    |
 | 4     | Hero Section                       | [x]    |
 | 5     | About and Skills                   | [x]    |
-| 6     | Projects Portfolio                 | [ ]    |
+| 6     | Projects Portfolio                 | [x]    |
 | 7     | Experience and Education           | [ ]    |
 | 8     | Contact Section                    | [ ]    |
 | 9     | Animations and Visual Polish       | [ ]    |
@@ -692,15 +694,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 5 — About and Skills — Completed
+**Current Phase:** Phase 6 — Projects Portfolio — Completed
 
-**Current Task:** Phase 5 verified; About and Skills sections use the supplied profile information and skill list.
+**Current Task:** Phase 6 verified; project data and cards use the supplied descriptions and technologies.
 
-**Last Completed Phase:** Phase 5 — About and Skills
+**Last Completed Phase:** Phase 6 — Projects Portfolio
 
 **Blocked Tasks:** None
 
-**Next Action:** Wait for Phase 5 to be merged and for user approval before starting Phase 6 — Projects Portfolio.
+**Next Action:** Wait for Phase 6 to be merged and for user approval before starting Phase 7 — Experience and Education.
 
 ---
 
