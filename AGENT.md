@@ -139,6 +139,19 @@ After completing the task, explain:
 
 Do not mark the phase complete or begin the next phase without verified acceptance criteria and the required approval.
 
+## Phase Git Handoff
+
+After a phase passes verification:
+
+1. Update `DEVELOPMENT_TASKS.md` with the verified phase status and current state.
+2. Commit the phase changes on that phase's branch.
+3. Push the branch to `origin` and confirm the push succeeded.
+4. Immediately switch back to `main` and fast-forward it from `origin/main`.
+5. Leave the phase branch available for review or merging; do not merge it automatically.
+6. Wait for user approval before beginning another phase.
+
+Create a branch for the next phase only after the previous phase has been merged into `main`. Start that branch from an up-to-date `main` so it includes all accepted prior-phase work. If the push or main update fails, report the failure and do not claim the handoff is complete.
+
 ---
 
 # 3. Final Instruction

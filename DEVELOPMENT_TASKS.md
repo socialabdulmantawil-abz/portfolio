@@ -34,6 +34,10 @@ Before starting any phase:
 9. Do not skip phases without explicit approval.
 10. Do not regenerate previously completed work unnecessarily.
 11. Update this tracking file after completing each phase.
+12. Commit the verified phase changes on that phase's branch and push the branch to GitHub.
+13. After the push succeeds, immediately return to `main` and fast-forward it from `origin/main`.
+14. Wait for user approval before beginning another phase.
+15. Create the next phase branch only after the previous phase has been merged into an up-to-date `main`.
 
 ## Progress Status
 
@@ -701,5 +705,7 @@ Update this section after every completed phase.
 8. Do not generate the entire application in one response.
 9. Do not introduce a new design system.
 10. Follow `AGENT.md` and `DEVELOPMENT_RULES.md` at all times.
+11. After each phase, push its branch and return to `main`; do not merge automatically.
+12. Base a new phase branch on `main` only after the previous phase has been merged.
 
 **The objective is to build a complete portfolio through controlled, verified, incremental development.**
