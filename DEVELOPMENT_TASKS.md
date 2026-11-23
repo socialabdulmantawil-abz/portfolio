@@ -313,15 +313,15 @@ The navigation is wired to `#home`, `#about`, `#skills`, `#projects`, `#experien
 
 ## Tasks
 
-- [ ] Add professional introduction.
-- [ ] Add developer role or title.
-- [ ] Add short professional description.
-- [ ] Add primary call-to-action.
-- [ ] Add secondary call-to-action.
-- [ ] Add social media links.
-- [ ] Add profile image or visual element if appropriate.
-- [ ] Add subtle entrance animation.
-- [ ] Implement responsive layout.
+- [x] Add professional introduction.
+- [x] Add developer role or title.
+- [x] Add short professional description.
+- [x] Add primary call-to-action.
+- [x] Add secondary call-to-action.
+- [x] Add social media links.
+- [x] Add profile image or visual element if appropriate.
+- [x] Add subtle entrance animation.
+- [x] Implement responsive layout.
 
 ## Components
 
@@ -336,12 +336,14 @@ components/
 
 ## Acceptance Criteria
 
-- [ ] Clear professional identity.
-- [ ] Strong visual hierarchy.
-- [ ] Functional buttons.
-- [ ] Functional social links.
-- [ ] Responsive on all screen sizes.
-- [ ] Consistent theme styling.
+- [x] Clear professional identity.
+- [x] Strong visual hierarchy.
+- [x] CTA links use their planned destinations.
+- [x] Functional social links.
+- [x] Responsive on all screen sizes.
+- [x] Consistent theme styling.
+
+The calls to action link to `#projects` and `#contact`. Actual target scrolling will be validated after the corresponding sections are implemented in Phases 6 and 8, preserving the approved phase boundaries.
 
 ---
 
@@ -677,7 +679,7 @@ Update this section after every completed phase.
 | 1     | Project Foundation                 | [x]    |
 | 2     | Design System and shadcn/ui        | [x]    |
 | 3     | Global Layout                      | [x]    |
-| 4     | Hero Section                       | [ ]    |
+| 4     | Hero Section                       | [x]    |
 | 5     | About and Skills                   | [ ]    |
 | 6     | Projects Portfolio                 | [ ]    |
 | 7     | Experience and Education           | [ ]    |
@@ -688,15 +690,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 3 — Global Layout — Completed
+**Current Phase:** Phase 4 — Hero Section — Completed
 
-**Current Task:** Phase 3 verified; actual navigation target scrolling will be validated as section content is added in Phases 5–8.
+**Current Task:** Phase 4 verified; CTA target scrolling will be validated when the Projects and Contact sections are implemented in Phases 6 and 8.
 
-**Last Completed Phase:** Phase 3 — Global Layout
+**Last Completed Phase:** Phase 4 — Hero Section
 
 **Blocked Tasks:** None
 
-**Next Action:** Wait for Phase 3 to be merged and for user approval before starting Phase 4 — Hero Section.
+**Next Action:** Wait for Phase 4 to be merged and for user approval before starting Phase 5 — About and Skills.
 
 ---
 
