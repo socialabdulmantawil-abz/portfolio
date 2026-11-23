@@ -1,45 +1,49 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  color-scheme: light;
+
   --background: #f5f7fa;
   --foreground: #142136;
-
+  --surface: #e9eef4;
   --card: #ffffff;
   --card-foreground: #142136;
-
+  --elevated: #ffffff;
   --popover: #ffffff;
   --popover-foreground: #142136;
-
   --primary: #347d74;
+  --primary-hover: #28685f;
   --primary-foreground: #ffffff;
-
   --secondary: #ddeae7;
   --secondary-foreground: #3f766e;
-
   --muted: #edf1f5;
   --muted-foreground: #5c6b7d;
-
   --accent: #cfe6df;
   --accent-foreground: #142136;
-
   --destructive: #b43d3d;
   --destructive-foreground: #ffffff;
-
+  --success: #28734d;
+  --warning: #8a5d16;
+  --info: #326b96;
+  --overlay: #0d1726;
   --border: #d4dde7;
   --input: #edf1f5;
   --ring: #347d74;
+  --selection: #cfe6df;
 
   --chart-1: #347d74;
-  --chart-2: #5c8fa8;
-  --chart-3: #8a7bae;
-  --chart-4: #c18d58;
-  --chart-5: #6b9b7c;
+  --chart-2: #3f766e;
+  --chart-3: #28685f;
+  --chart-4: #5c6b7d;
+  --chart-5: #142136;
 
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 
-  --sidebar: #ffffff;
+  --sidebar: #e9eef4;
   --sidebar-foreground: #142136;
   --sidebar-primary: #347d74;
   --sidebar-primary-foreground: #ffffff;
@@ -50,39 +54,41 @@
 }
 
 .dark {
+  color-scheme: dark;
+
   --background: #0d1726;
   --foreground: #f4f6fa;
-
+  --surface: #142136;
   --card: #1b2a40;
   --card-foreground: #f4f6fa;
-
+  --elevated: #22334b;
   --popover: #142136;
   --popover-foreground: #f4f6fa;
-
   --primary: #70b5aa;
+  --primary-hover: #83c2b7;
   --primary-foreground: #0d1726;
-
   --secondary: #2a3c54;
   --secondary-foreground: #a5d0c6;
-
   --muted: #22334b;
   --muted-foreground: #aab8c9;
-
   --accent: #315c5b;
   --accent-foreground: #f4f6fa;
-
   --destructive: #e58b8b;
   --destructive-foreground: #0d1726;
-
+  --success: #80c5a0;
+  --warning: #e4bd78;
+  --info: #82b8dc;
+  --overlay: #0d1726;
   --border: #3a4d67;
   --input: #22334b;
   --ring: #a5d0c6;
+  --selection: #315c5b;
 
   --chart-1: #70b5aa;
-  --chart-2: #82b8dc;
+  --chart-2: #83c2b7;
   --chart-3: #a5d0c6;
-  --chart-4: #e4bd78;
-  --chart-5: #80c5a0;
+  --chart-4: #315c5b;
+  --chart-5: #2a3c54;
 
   --sidebar: #142136;
   --sidebar-foreground: #f4f6fa;
@@ -97,38 +103,36 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
+  --color-surface: var(--surface);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-
+  --color-elevated: var(--elevated);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-primary-foreground: var(--primary-foreground);
-
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-overlay: var(--overlay);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-
+  --color-selection: var(--selection);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -138,17 +142,34 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
 }
 
-* {
-  border-color: var(--border);
-}
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    background: var(--selection);
+    color: var(--foreground);
+  }
 }
