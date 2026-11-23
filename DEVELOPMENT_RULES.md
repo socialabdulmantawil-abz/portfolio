@@ -11,7 +11,7 @@ Use the following technologies as the project's standard stack.
 | TypeScript         | Type safety                                          |
 | Tailwind CSS       | Utility-first styling                                |
 | shadcn/ui          | Primary UI component foundation                      |
-| Radix UI           | Accessible component primitives where used by shadcn |
+| Base UI / Radix UI | Accessible primitives used by the selected shadcn base |
 | Lucide React       | Icons                                                |
 | next-themes        | Dark/light theme management                          |
 | CSS Variables      | Centralized design tokens                            |
@@ -23,6 +23,7 @@ Use the following technologies as the project's standard stack.
 - Use Next.js App Router.
 - Use Tailwind CSS for utility styling.
 - Use shadcn/ui for reusable interface components.
+- Use the accessible component primitives selected by the shadcn setup.
 - Use Lucide React for icons.
 - Use `next-themes` for theme switching.
 - Use npm, not pnpm or yarn.

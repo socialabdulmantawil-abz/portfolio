@@ -116,14 +116,14 @@ This is a critical phase. Every subsequent phase must use this design system.
 
 ## 2.1 Install and Configure shadcn/ui
 
-- [ ] Initialize shadcn/ui using the official Next.js setup.
-- [ ] Configure `components.json`.
-- [ ] Confirm the correct Tailwind CSS integration.
-- [ ] Configure the component alias.
-- [ ] Configure the utility alias.
-- [ ] Install Lucide React if not already available.
-- [ ] Confirm the generated components work.
-- [ ] Review the generated component structure.
+- [x] Initialize shadcn/ui using the official Next.js setup.
+- [x] Configure `components.json`.
+- [x] Confirm the correct Tailwind CSS integration.
+- [x] Configure the component alias.
+- [x] Configure the utility alias.
+- [x] Install Lucide React if not already available.
+- [x] Confirm the generated components work.
+- [x] Review the generated component structure.
 
 ## 2.2 Implement the Official Color Palette
 
@@ -131,87 +131,87 @@ Implement the exact Midnight Navy — Crisp Edition palette from `AGENT.md` and 
 
 ### Dark Theme
 
-- [ ] Background: #0D1726
-- [ ] Foreground: #F4F6FA
-- [ ] Surface: #142136
-- [ ] Card: #1B2A40
-- [ ] Elevated: #22334B
-- [ ] Primary: #70B5AA
-- [ ] Primary Hover: #83C2B7
-- [ ] Primary Foreground: #0D1726
-- [ ] Secondary: #2A3C54
-- [ ] Secondary Foreground: #A5D0C6
-- [ ] Muted Foreground: #AAB8C9
-- [ ] Accent: #315C5B
-- [ ] Border: #3A4D67
-- [ ] Input: #22334B
-- [ ] Ring: #A5D0C6
+- [x] Background: #0D1726
+- [x] Foreground: #F4F6FA
+- [x] Surface: #142136
+- [x] Card: #1B2A40
+- [x] Elevated: #22334B
+- [x] Primary: #70B5AA
+- [x] Primary Hover: #83C2B7
+- [x] Primary Foreground: #0D1726
+- [x] Secondary: #2A3C54
+- [x] Secondary Foreground: #A5D0C6
+- [x] Muted Foreground: #AAB8C9
+- [x] Accent: #315C5B
+- [x] Border: #3A4D67
+- [x] Input: #22334B
+- [x] Ring: #A5D0C6
 
 ### Light Theme
 
-- [ ] Background: #F5F7FA
-- [ ] Foreground: #142136
-- [ ] Surface: #E9EEF4
-- [ ] Card: #FFFFFF
-- [ ] Primary: #347D74
-- [ ] Primary Hover: #28685F
-- [ ] Primary Foreground: #FFFFFF
-- [ ] Secondary: #DDEAE7
-- [ ] Secondary Foreground: #3F766E
-- [ ] Muted Foreground: #5C6B7D
-- [ ] Accent: #CFE6DF
-- [ ] Border: #D4DDE7
-- [ ] Input: #EDF1F5
-- [ ] Ring: #347D74
+- [x] Background: #F5F7FA
+- [x] Foreground: #142136
+- [x] Surface: #E9EEF4
+- [x] Card: #FFFFFF
+- [x] Primary: #347D74
+- [x] Primary Hover: #28685F
+- [x] Primary Foreground: #FFFFFF
+- [x] Secondary: #DDEAE7
+- [x] Secondary Foreground: #3F766E
+- [x] Muted Foreground: #5C6B7D
+- [x] Accent: #CFE6DF
+- [x] Border: #D4DDE7
+- [x] Input: #EDF1F5
+- [x] Ring: #347D74
 
 ## 2.3 Configure Semantic CSS Variables
 
-- [ ] Configure background and foreground.
-- [ ] Configure card and card foreground.
-- [ ] Configure popover and popover foreground.
-- [ ] Configure primary and primary foreground.
-- [ ] Configure secondary and secondary foreground.
-- [ ] Configure muted and muted foreground.
-- [ ] Configure accent and accent foreground.
-- [ ] Configure destructive colors.
-- [ ] Configure border, input and ring.
-- [ ] Configure radius variables.
-- [ ] Configure sidebar variables.
-- [ ] Configure chart variables.
-- [ ] Configure additional semantic status colors.
+- [x] Configure background and foreground.
+- [x] Configure card and card foreground.
+- [x] Configure popover and popover foreground.
+- [x] Configure primary and primary foreground.
+- [x] Configure secondary and secondary foreground.
+- [x] Configure muted and muted foreground.
+- [x] Configure accent and accent foreground.
+- [x] Configure destructive colors.
+- [x] Configure border, input and ring.
+- [x] Configure radius variables.
+- [x] Configure sidebar variables.
+- [x] Configure chart variables.
+- [x] Configure additional semantic status colors.
 
 ## 2.4 Configure Theme Provider
 
-- [ ] Install and configure `next-themes`.
-- [ ] Use class-based theme switching.
-- [ ] Set dark mode as the default.
-- [ ] Configure hydration handling.
-- [ ] Prevent theme flashing.
-- [ ] Implement a reusable theme toggle.
-- [ ] Verify dark mode.
-- [ ] Verify light mode.
+- [x] Install and configure `next-themes`.
+- [x] Use class-based theme switching.
+- [x] Set dark mode as the default.
+- [x] Configure hydration handling.
+- [x] Prevent theme flashing.
+- [x] Implement a reusable theme toggle.
+- [x] Verify dark mode.
+- [x] Verify light mode.
 
 ## 2.5 Build Base shadcn Components
 
 Install only the components needed for the portfolio.
 
-- [ ] Button
-- [ ] Card
-- [ ] Badge
-- [ ] Input
-- [ ] Textarea
-- [ ] Label
-- [ ] Separator
-- [ ] Dialog
-- [ ] Dropdown Menu
-- [ ] Sheet
-- [ ] Tooltip
-- [ ] Tabs
-- [ ] Accordion
-- [ ] Avatar
-- [ ] Skeleton
-- [ ] Select
-- [ ] Alert Dialog
+- [x] Button
+- [x] Card
+- [x] Badge
+- [x] Input
+- [x] Textarea
+- [x] Label
+- [x] Separator
+- [x] Dialog
+- [x] Dropdown Menu
+- [x] Sheet
+- [x] Tooltip
+- [x] Tabs
+- [x] Accordion
+- [x] Avatar
+- [x] Skeleton
+- [x] Select
+- [x] Alert Dialog
 
 Additional components may be installed when required by later phases.
 
@@ -219,35 +219,35 @@ Additional components may be installed when required by later phases.
 
 Create a temporary development-only theme preview containing:
 
-- [ ] Primary buttons.
-- [ ] Secondary buttons.
-- [ ] Outline buttons.
-- [ ] Ghost buttons.
-- [ ] Destructive buttons.
-- [ ] Cards.
-- [ ] Badges.
-- [ ] Inputs.
-- [ ] Textareas.
-- [ ] Dialogs.
-- [ ] Dropdowns.
-- [ ] Tabs.
-- [ ] Tooltips.
-- [ ] Focus states.
-- [ ] Disabled states.
-- [ ] Hover states.
+- [x] Primary buttons.
+- [x] Secondary buttons.
+- [x] Outline buttons.
+- [x] Ghost buttons.
+- [x] Destructive buttons.
+- [x] Cards.
+- [x] Badges.
+- [x] Inputs.
+- [x] Textareas.
+- [x] Dialogs.
+- [x] Dropdowns.
+- [x] Tabs.
+- [x] Tooltips.
+- [x] Focus states.
+- [x] Disabled states.
+- [x] Hover states.
 
 Verify all components in dark and light themes.
 
 ## Acceptance Criteria
 
-- [ ] shadcn/ui is configured correctly.
-- [ ] All theme tokens match the approved palette.
-- [ ] Components use semantic color tokens.
-- [ ] No unrelated colors have been introduced.
-- [ ] Dark/light switching works.
-- [ ] Component variants are consistent.
-- [ ] No unnecessary UI libraries are installed.
-- [ ] Theme preview passes visual inspection.
+- [x] shadcn/ui is configured correctly.
+- [x] All theme tokens match the approved palette.
+- [x] Components use semantic color tokens.
+- [x] No unrelated colors have been introduced.
+- [x] Dark/light switching works.
+- [x] Component variants are consistent.
+- [x] No unnecessary UI libraries are installed.
+- [x] Theme preview passes visual inspection.
 
 **Do not proceed until the design system has been approved.**
 
@@ -668,7 +668,7 @@ Update this section after every completed phase.
 | Phase | Description                        | Status |
 | ----- | ---------------------------------- | ------ |
 | 1     | Project Foundation                 | [x]    |
-| 2     | Design System and shadcn/ui        | [ ]    |
+| 2     | Design System and shadcn/ui        | [x]    |
 | 3     | Global Layout                      | [ ]    |
 | 4     | Hero Section                       | [ ]    |
 | 5     | About and Skills                   | [ ]    |
@@ -681,15 +681,15 @@ Update this section after every completed phase.
 
 ## CURRENT DEVELOPMENT STATE
 
-**Current Phase:** Phase 1 — Project Foundation — Completed
+**Current Phase:** Phase 2 — Design System and shadcn/ui — Completed
 
-**Current Task:** Phase 1 verified; awaiting approval before Phase 2.
+**Current Task:** Phase 2 verified; awaiting design-system approval before Phase 3.
 
-**Last Completed Phase:** Phase 1 — Project Foundation
+**Last Completed Phase:** Phase 2 — Design System and shadcn/ui
 
 **Blocked Tasks:** None
 
-**Next Action:** Wait for approval before starting Phase 2 — Design System and shadcn/ui.
+**Next Action:** Wait for design-system approval before starting Phase 3 — Global Layout.
 
 ---
 
